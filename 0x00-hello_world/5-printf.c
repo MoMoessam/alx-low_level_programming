@@ -3,6 +3,9 @@
  *main is the entry point
  */
 int main(void)
+/*
+ * main is the entry ppoint
+*/
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
