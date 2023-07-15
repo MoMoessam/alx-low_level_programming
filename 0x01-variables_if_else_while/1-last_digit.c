@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* Main function - sorts number according to last digit */
+/**
+  * main - Entry point
+  *
+  * Description: 'the program's description'
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
 	int n;

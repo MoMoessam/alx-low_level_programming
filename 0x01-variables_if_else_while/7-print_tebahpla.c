@@ -8,14 +8,12 @@
   */
 int main(void)
 {
-char ch;
+	int n;
+	for (n = 122 ; n >= 97 ; n--)
+	{
+		putchar(n);
+	}
+	putchar('\n');
 
-for (ch = 'a'; ch <= 'z'; ch++)
-{
-	putchar(ch);
-}
-
-putchar('\n');
-
-return (0);
+	return (0);
 }
