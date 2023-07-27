@@ -1,6 +1,5 @@
 #include "main.h"
 /**
-*
 * print_alphabet - 'the program's description'
 *
 * Return: Always 0 (Success)
