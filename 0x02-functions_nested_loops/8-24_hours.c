@@ -5,23 +5,18 @@
  * starting from 00:00 to 23:59
  */
 void jack_bauer(void)
-{
-	int h1, h2, m1, m2;
 
-	for (h1 = 0; h1 <= 2; h1++)
-		for (h2 = 0; h2 <= 9; h2++)
-			for (m1 = 0; m1 <= 5; m1++)
-				for (m2 = 0; m2 <= 9; m2++)
-				{
-					if (h1 == 2 && h2 == 3 && m1 == 5 && m2 == 9)
-					{
-						continue;
-					}
-					_putchar(h1 + '0');
-					_putchar(h2 + '0');
-					_putchar(':');
-					_putchar(m1 + '0');
-					_putchar(m2 + '0');
-					_putchar('\n');
-				}
+int hr, min;
+
+for (hr = 0; hr <= 23; hr++)
+{
+	for (min = 0; min <= 59; min++)
+	{
+		_putchar((hr / 10) + 48);
+		_putchar((hr % 10) + 48);
+		_putchar(':');
+		_putchar((min / 10) + 48);
+		_putchar((min % 10) + 48);
+		_putchar('\n');
+	}
 }
