@@ -5,7 +5,7 @@
  * starting from 00:00 to 23:59
  */
 void jack_bauer(void)
-
+{
 int hr, min;
 
 for (hr = 0; hr <= 23; hr++)
@@ -19,4 +19,5 @@ for (hr = 0; hr <= 23; hr++)
 		_putchar((min % 10) + 48);
 		_putchar('\n');
 	}
+}
 }
