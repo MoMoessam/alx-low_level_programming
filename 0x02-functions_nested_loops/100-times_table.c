@@ -26,6 +26,17 @@ void print_times_table(int n)
 			_putchar(' ');
 			}
 			}
+			if (i * j > 100)
+			{
+				int l = n / 10;
+
+				putchar((n / 100) + '0');
+				putchar((l % 10) + '0');
+				putchar((n % 10) + '0');
+				if (j != n)
+				{
+					_putchar(',');
+					_putchar(' ');
 			else
 			{
 				if (j > 0)
