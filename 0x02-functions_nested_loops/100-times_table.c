@@ -26,7 +26,7 @@ void print_times_table(int n)
 			_putchar(' ');
 			}
 			}
-			if (i * j > 100)
+			if (i * j >= 100)
 			{
 				int l = n / 10;
 
@@ -39,7 +39,7 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 			}
-			else
+			if (i * j < 10)
 			{
 				if (j > 0)
 					_putchar(' ');
