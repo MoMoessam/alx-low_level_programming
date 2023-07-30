@@ -13,12 +13,22 @@ long int sum1 = 1, sum2 = 2, i;
 
 for (i = 0; i < 50; i++)
 {
-	printf("%ld, ", sum1);
-	printf("%ld", sum2);
-	if (i != 49)
-         printf(", ");
-	sum1 = sum2 + sum1;
-	sum2 = sum1 + sum2;
+	if (sum1 > 7540113804746346429 || sum2 > 7540113804746346429)
+	{
+		sum_1 = sum1 % 10000000000;
+		sum_2 = sum2 % 10000000000;
+		printf("%ld%ld, ", sum1, sum_1);
+		printf("%ld%ld", sum2, sum_2);
+	}
+	else
+	{
+		printf("%ld, ", sum1);
+		printf("%ld", sum2);
+		if (i != 49)
+			printf(", ");
+		sum1 = sum2 + sum1;
+		sum2 = sum1 + sum2;
+	}
 }
 printf("\n");
 
