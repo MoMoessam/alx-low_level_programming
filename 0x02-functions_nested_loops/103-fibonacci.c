@@ -22,7 +22,6 @@ for (i = 0; i < 100; i++)
 	sum1 = sum2 + sum1;
 	sum2 = sum1 + sum2;
 }
-printf("\n");
 printf("%ld", sum_all);
 
 return (0);
