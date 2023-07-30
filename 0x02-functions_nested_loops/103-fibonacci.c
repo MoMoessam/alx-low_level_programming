@@ -23,6 +23,7 @@ for (i = 0; i < 100; i++)
 	sum2 = sum1 + sum2;
 }
 printf("%ld", sum_all);
+printf("\n");
 
 return (0);
 }
