@@ -6,7 +6,7 @@
  *
  */
 
-void main()
+int main()
 {
 	int i, sum = 0;
 
@@ -19,4 +19,6 @@ void main()
 	}
 
 	printf("%d\n", sum);
+
+	return (0);
 }
