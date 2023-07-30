@@ -19,8 +19,12 @@ for (i = 0; i < 50; i++)
 		sum_11 = sum1 / 10000000000;
 		sum_2 = sum2 % 10000000000;
 		sum_22 = sum2 / 10000000000;
-		printf("%ld%ld, ", sum1, sum_11);
-		printf("%ld%ld", sum2, sum_22);
+		printf("%ld%ld, ", sum_1, sum_11);
+		printf("%ld%ld", sum_2, sum_22);
+		if (i != 49)
+			printf(", ");
+		sum1 = sum2 + sum1;
+		sum2 = sum1 + sum2;
 	}
 	else
 	{
