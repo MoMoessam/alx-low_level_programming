@@ -13,8 +13,8 @@ long int sum1 = 1, sum2 = 2, i;
 
 for (i = 0; i < 25; i++)
 {
-	printf("%d, ", sum1);
-	printf("%d", sum2);
+	printf("%ld, ", sum1);
+	printf("%ld", sum2);
 	if (i != 24)
 		printf(", ");
 	sum1 = sum2 + sum1;
