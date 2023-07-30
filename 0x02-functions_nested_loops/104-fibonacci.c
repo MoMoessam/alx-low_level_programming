@@ -1,44 +1,47 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
-  * main - function that prints first 50 fibbonaci numbers
-  *
-  * Return: always 0 (success)
-  *
-  */
+ * main - fibonacci <3
+ *
+ * Purpose - no hardcode
+ *
+ * Return:  (Success)
+ */
 
 int main(void)
 {
-long int sum1 = 1, sum2 = 2, i, sum_1, sum_2, sum_11, sum_22;
+	unsigned long int i;
+	unsigned long int bef = 1;
+	unsigned long int aft = 2;
+	unsigned long int l = 1000000000;
+	unsigned long int bef1;
+	unsigned long int bef2;
+	unsigned long int aft1;
+	unsigned long int aft2;
 
-for (i = 0; i < 50; i++)
-{
-	if (sum1 > 3416454622906707 || sum2 > 3416454622906707)
-	{
-		sum_1 = sum1 % 10000000;
-		sum_11 = sum1 / 10000000;
-		sum_2 = sum2 % 10000000;
-		sum_22 = sum2 / 1000000;
-		printf("%ld%ld, ", sum_11, sum_1);
-		printf("%ld%ld", sum_22, sum_2);
-		if (i != 49)
-			printf(", ");
-		sum_1 = sum_2 + sum_1;
-		sum_2 = sum_1 + sum_2;
-		sum_11 = sum_11 + sum_22;
-		sum_22 = sum_22 + sum_11;
-	}
-	else
-	{
-		printf("%ld, ", sum1);
-		printf("%ld", sum2);
-		if (i != 49)
-			printf(", ");
-		sum1 = sum2 + sum1;
-		sum2 = sum1 + sum2;
-	}
-}
-printf("\n");
+	printf("%lu", bef);
 
-return (0);
+	for (i = 1; i < 91; i++)
+	{
+		printf(", %lu", aft);
+		aft += bef;
+		bef = aft - bef;
+	}
+
+	bef1 = (bef / l);
+	bef2 = (bef % l);
+	aft1 = (aft / l);
+	aft2 = (aft % l);
+
+	for (i = 92; i < 99; ++i)
+	{
+		printf(", %lu", aft1 + (aft2 / l));
+		printf("%lu", aft2 % l);
+		aft1 = aft1 + bef1;
+		bef1 = aft1 - bef1;
+		aft2 = aft2 + bef2;
+		bef2 = aft2 - bef2;
+	}
+	printf("\n");
+	return (0);
 }
