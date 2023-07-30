@@ -23,8 +23,10 @@ for (i = 0; i < 50; i++)
 		printf("%ld%ld", sum_2, sum_22);
 		if (i != 49)
 			printf(", ");
-		sum1 = sum2 + sum1;
-		sum2 = sum1 + sum2;
+		sum_1 = sum_2 + sum_1;
+		sum_2 = sum_1 + sum_2;
+		sum_11 = sum_11 + sum_22;
+		sum_22 = sum_22 + sum_11;
 	}
 	else
 	{
