@@ -6,7 +6,7 @@
  *
  */
 
-void main
+void main()
 {
 	int i, sum = 0;
 
