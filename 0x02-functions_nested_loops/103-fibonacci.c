@@ -9,18 +9,23 @@
 
 int main(void)
 {
-long int sum1 = 1, sum2 = 2, i;
+long int sum1 = 1, sum2 = 2, i, sum_all;
 
-for (i = 0; i < 25; i++)
+for (i = 0; i < 100; i++)
 {
-	printf("%ld, ", sum1);
-	printf("%ld", sum2);
-	if (i != 24)
-		printf(", ");
+	if (sum1 > 4000000 || sum2 > 4000000)
+		break;
+	if (sum1 % 2 == 0)
+		sum_all += sum1;
+	if (sum2 % 2 == 0)
+		sum_all += sum2;
 	sum1 = sum2 + sum1;
 	sum2 = sum1 + sum2;
+	
+	
 }
 printf("\n");
+printf("%d", sum_all);
 
 return (0);
 }
