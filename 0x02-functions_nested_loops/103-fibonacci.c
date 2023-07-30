@@ -21,11 +21,9 @@ for (i = 0; i < 100; i++)
 		sum_all += sum2;
 	sum1 = sum2 + sum1;
 	sum2 = sum1 + sum2;
-	
-	
 }
 printf("\n");
-printf("%d", sum_all);
+printf("%ld", sum_all);
 
 return (0);
 }
