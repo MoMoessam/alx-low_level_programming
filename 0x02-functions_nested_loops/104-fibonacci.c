@@ -15,12 +15,12 @@ for (i = 0; i < 50; i++)
 {
 	if (sum1 > 3416454622906707 || sum2 > 3416454622906707)
 	{
-		sum_1 = sum1 % 10000000000;
-		sum_11 = sum1 / 10000000000;
-		sum_2 = sum2 % 10000000000;
-		sum_22 = sum2 / 10000000000;
-		printf("%ld%ld, ", sum_1, sum_11);
-		printf("%ld%ld", sum_2, sum_22);
+		sum_1 = sum1 % 10000000;
+		sum_11 = sum1 / 10000000;
+		sum_2 = sum2 % 10000000;
+		sum_22 = sum2 / 1000000;
+		printf("%ld%ld, ", sum_11, sum_1);
+		printf("%ld%ld", sum_22, sum_2);
 		if (i != 49)
 			printf(", ");
 		sum_1 = sum_2 + sum_1;
