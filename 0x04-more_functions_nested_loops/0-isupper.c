@@ -13,12 +13,12 @@ int _isupper(int c)
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (i == c)
-			j = 1;
+			j = 0;
 	}
 	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (i == c)
-			j = 0;
+			j = 1;
 	}
 
 	return (j);
